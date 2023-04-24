@@ -1,0 +1,27 @@
+:root {
+  --title-text: #2e2f42;
+  --subtitle: #434455;
+  --primary-brand-pgup: #2e2f42;
+  --primary-brand-pgdn: #f4f4fd;
+  --background-body: #ffffff;
+  --background-hero: #2e2f42;
+  --background-hero-gradient: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
+  --team-img-gap: 24px;
+  --portfolio-img-gap: 24px;
+  --portfolio-card-border: #e7e9fc;
+  --footer-subtitle-color: #ffffff;
+  --footer-text-color: #f4f4fd;
+  --background-footer: #2e2f42;
+  --portfolio-btn-text: #4d5ae5;
+  --portfolio-background-btn: #f4f4fd;
+  --portfolio-btn-text-hover: #ffffff;
+  --portfolio-btn-background-hover: #404bbf;
+  --transition-hover-focus: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-close-black: #2e2f42;
+  --modal-close-white: #ffffff;
+  --modal-btn-bckg: #e7e9fc;
+  --modal-btn-bckg-hover: #404bbf;
+}
