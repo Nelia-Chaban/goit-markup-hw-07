@@ -1110,15 +1110,16 @@ body {
   }
 }
 .portfolio-hero {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .portfolio-hero-wrapper {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 72px;
-  gap: 24px;
+  gap: 16px 24px;
 }
 
 .hero-portfolio-btn {
@@ -1149,15 +1150,11 @@ body {
 .portfolio-list-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--portfolio-img-gap));
-  margin-left: calc(-1 * var(--portfolio-img-gap));
+  gap: 48px;
 }
 
 .portfolio-list-item {
-  display: flex;
-  flex-basis: calc(33.3333333333% - var(--portfolio-img-gap));
-  margin-top: var(--portfolio-img-gap);
-  margin-left: var(--portfolio-img-gap);
+  min-width: 396px;
 }
 
 .portfolio-list-link {
