@@ -607,7 +607,7 @@ body {
   max-width: 428px;
   margin: 0 auto;
   background-color: var(--background-hero);
-  background-image: var(--background-hero-gradient), url(../images/hero-bg-img.jpg);
+  background-image: var(--background-hero-gradient), url(/images/hero-bg-table.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -632,11 +632,15 @@ body {
   .main-title {
     font-size: 28px;
   }
+  .hero {
+    background-image: var(--background-hero-gradient), url(/images/hero-bg-mobile.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
     height: 436px;
     max-width: 768px;
+    background-image: var(--background-hero-gradient), url(/images/hero-bg-desktop.jpg);
   }
   .main-title {
     font-size: 56px;
@@ -1043,6 +1047,7 @@ body {
   .footer-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
   }
   .footer-inner {
     padding-left: initial;
