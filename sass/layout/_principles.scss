@@ -31,16 +31,19 @@
   .principles-item {
     max-width: 356px;
   }
+
+  .principles-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: start;
+  }
+
   .principles-description {
     align-items: flex-start;
   }
 }
 @media screen and (min-width: 1158px) {
-  .principles-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
   .principles-item {
     max-width: 264px;
   }

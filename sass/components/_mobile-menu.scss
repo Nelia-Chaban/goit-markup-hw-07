@@ -105,26 +105,13 @@
 
 @media screen and (max-width: 427px) {
   .mobile-address-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
     .phone {
-      font-weight: 700;
       font-size: 26px;
-      line-height: 1.11;
-      letter-spacing: 0.02em;
-      text-transform: capitalize;
-      text-align: center;
-      color: #434455;
     }
   }
 
   .mobile-media-list {
     gap: 32px;
-    margin-top: 48px;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 

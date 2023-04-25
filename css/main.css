@@ -216,25 +216,11 @@ body {
   }
 }
 @media screen and (max-width: 427px) {
-  .mobile-address-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
   .mobile-address-list .phone {
-    font-weight: 700;
     font-size: 26px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    color: #434455;
   }
   .mobile-media-list {
     gap: 32px;
-    margin-top: 48px;
-    display: flex;
-    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 768px) {
@@ -492,14 +478,6 @@ body {
     width: 408px;
   }
 }
-@media screen and (max-width: 767px) {
-  .header-list {
-    display: none;
-  }
-  .header-address {
-    display: none;
-  }
-}
 .header {
   padding-top: 24px;
   padding-bottom: 22px;
@@ -511,6 +489,12 @@ body {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .header-list,
+  .header-address {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .mobile-menu-open {
     display: none;
@@ -595,11 +579,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-    transition: color var(--transition-hover-focus);
-  }
-  .address-link:is(:hover, :focus) {
-    color: #404bbf;
   }
 }
 .hero {
@@ -615,6 +594,11 @@ body {
   padding-bottom: 112px;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--background-hero-gradient), url(/images/hero-bg-table-2x.jpg);
+  }
+}
 .main-title {
   font-size: 36px;
   line-height: 1.11;
@@ -636,12 +620,24 @@ body {
     background-image: var(--background-hero-gradient), url(/images/hero-bg-mobile.jpg);
   }
 }
+@media screen and (max-width: 427px) and (min-device-pixel-ratio: 2), screen and (max-width: 427px) and (min-resolution: 192dpi), screen and (max-width: 427px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--background-hero-gradient), url(/images/hero-bg-mobile-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     height: 436px;
     max-width: 768px;
     background-image: var(--background-hero-gradient), url(/images/hero-bg-desktop.jpg);
   }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--background-hero-gradient), url(/images/hero-bg-desktop-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
   .main-title {
     font-size: 56px;
     margin-bottom: 36px;
@@ -696,16 +692,17 @@ body {
   .principles-item {
     max-width: 356px;
   }
+  .principles-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: start;
+  }
   .principles-description {
     align-items: flex-start;
   }
 }
 @media screen and (min-width: 1158px) {
-  .principles-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
   .principles-item {
     max-width: 264px;
   }
@@ -735,26 +732,26 @@ body {
   }
 }
 .work {
-  padding-top: 0;
+  display: none;
 }
 
-.work-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -24px;
-  margin-left: -24px;
+@media screen and (min-width: 1158px) {
+  .work {
+    display: block;
+    padding-top: 0;
+  }
+  .work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+  }
+  .work-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  .work-title {
+    color: var(--title-text);
+  }
 }
-
-.work-list-item {
-  flex-basis: calc(33.3333333333% - 24px);
-  margin-top: 24px;
-  margin-left: 24px;
-}
-
-.work-title {
-  color: var(--title-text);
-}
-
 .team {
   background-color: #f4f4fd;
 }
@@ -810,12 +807,7 @@ body {
   .team-container {
     max-width: 1158px;
   }
-  .team-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-  .team-list-item {
+  .team-wrapper .team-list-item {
     flex-basis: calc((100% - 72px) / 4);
   }
 }
@@ -1092,8 +1084,6 @@ body {
   .subscribe-input::placeholder {
     font-size: 12px;
     line-height: 2;
-    /* display: flex;
-      align-items: center; */
     letter-spacing: 0.04em;
     color: #ffffff;
   }
