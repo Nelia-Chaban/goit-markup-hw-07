@@ -4,7 +4,7 @@
   margin: 0 auto;
   background-color: var(--background-hero);
   background-image: var(--background-hero-gradient),
-    url(/images/hero-bg-table.jpg);
+    url("/images/hero-bg-table.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,7 +16,7 @@
   (min-resolution: 2dppx) {
   .hero {
     background-image: var(--background-hero-gradient),
-      url(/images/hero-bg-table-2x.jpg);
+      url("/images/hero-bg-table-2x.jpg");
   }
 }
 

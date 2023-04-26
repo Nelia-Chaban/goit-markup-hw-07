@@ -586,7 +586,7 @@ body {
   max-width: 428px;
   margin: 0 auto;
   background-color: var(--background-hero);
-  background-image: var(--background-hero-gradient), url(/images/hero-bg-table.jpg);
+  background-image: var(--background-hero-gradient), url("/images/hero-bg-table.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -596,7 +596,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background-hero-gradient), url(/images/hero-bg-table-2x.jpg);
+    background-image: var(--background-hero-gradient), url("/images/hero-bg-table-2x.jpg");
   }
 }
 .main-title {
