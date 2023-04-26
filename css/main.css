@@ -586,7 +586,7 @@ body {
   max-width: 428px;
   margin: 0 auto;
   background-color: var(--background-hero);
-  background-image: var(--background-hero-gradient), url("/images/hero-bg-table.jpg");
+  background-image: var(--background-hero-gradient), url(../images/hero-bg-table.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -596,7 +596,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background-hero-gradient), url("/images/hero-bg-table-2x.jpg");
+    background-image: var(--background-hero-gradient), url(../images/hero-bg-table-2x.jpg);
   }
 }
 .main-title {
@@ -617,24 +617,24 @@ body {
     font-size: 28px;
   }
   .hero {
-    background-image: var(--background-hero-gradient), url(/images/hero-bg-mobile.jpg);
+    background-image: var(--background-hero-gradient), url(../images/hero-bg-mobile.jpg);
   }
 }
 @media screen and (max-width: 427px) and (min-device-pixel-ratio: 2), screen and (max-width: 427px) and (min-resolution: 192dpi), screen and (max-width: 427px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background-hero-gradient), url(/images/hero-bg-mobile-2x.jpg);
+    background-image: var(--background-hero-gradient), url(../images/hero-bg-mobile-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     height: 436px;
     max-width: 768px;
-    background-image: var(--background-hero-gradient), url(/images/hero-bg-desktop.jpg);
+    background-image: var(--background-hero-gradient), url(../images/hero-bg-desktop.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background-hero-gradient), url(/images/hero-bg-desktop-2x.jpg);
+    background-image: var(--background-hero-gradient), url(../images/hero-bg-desktop-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
