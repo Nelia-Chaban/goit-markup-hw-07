@@ -975,7 +975,7 @@ body {
   position: absolute;
   right: auto;
   bottom: 50%;
-  transform: translateY(198%);
+  transform: translateY(170%);
 }
 
 @media screen and (max-width: 427px) {
