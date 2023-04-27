@@ -28,6 +28,11 @@
   .navigation {
     display: flex;
   }
+
+  .header-address {
+    font-style: normal;
+  }
+
   .header-logo {
     margin-right: 120px;
   }
@@ -104,7 +109,6 @@
   }
 
   .header-address {
-    font-style: normal;
     display: flex;
     margin-left: auto;
   }
